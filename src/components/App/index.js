@@ -2,12 +2,12 @@ import React from 'react'
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import Home from '../../components/Home'
+import Body from '../../components/Body'
 
 const Main = props => (
   <div>
     <Header />
-    <Home />
+    <Body />
     <Footer />
   </div>
 )
