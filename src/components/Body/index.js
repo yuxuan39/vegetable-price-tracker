@@ -1,5 +1,5 @@
 import React from 'react'
-import PricePage from '../PricePage/'
+import PricePage from '../Body/PricePage/PricePage'
 
 class Body extends React.Component {
   constructor(props) {
