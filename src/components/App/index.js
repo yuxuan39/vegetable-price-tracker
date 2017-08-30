@@ -9,7 +9,9 @@ class App extends React.Component {
     super(props)
     
     this.state = {
-      page: '/'
+      page: '/',
+      filter_condition: 'sort', // 'sort', 'location'
+      location: '台北市場',
     }
   }
 
@@ -22,10 +24,9 @@ class App extends React.Component {
   // 把 page 往下傳到 Header 跟 Body
   render() {
     return (
-      <div>
-        <Header changePage={this.changePage.bind(this)} page={this.state.page}/>
-        <Body page={this.state.page}/>
-        <Footer />
+      <div id='container'>
+        <Header changePage={this.changePage.bind(this)} page={this.state.page} setState={this.setState.bind(this)}/>
+        <Body page={this.state.page} filter_condition={this.state.filter_condition} location={this.state.location}/>
       </div>
     )
   }
