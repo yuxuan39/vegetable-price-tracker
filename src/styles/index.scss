@@ -43,7 +43,7 @@ table {
         font-size: (20/16)*1rem;
         th {
             width: 150px;
-            line-height: 50px;
+            line-height: 40px;
             padding: 0 30px 0 30px;
         }
     }
@@ -56,4 +56,8 @@ table {
         font-size: (20/16)*1rem;
         line-height: 34px;
     }
+}
+
+#content:hover {
+    background-color: white;
 }
